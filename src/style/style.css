@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #efbc9b;
+  --secondary: #fbf3d5;
+  --dark: #000000;
+  --light: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary);
+}
+
+header {
+  color: var(--dark);
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .input-form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-block: 2rem;
+  padding: 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container .input-form label {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-block: 0.5rem;
+}
+
+.container .input-form input {
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 1rem;
+  margin-block: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.container .input-form textarea {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 1rem;
+  margin-block: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.container .input-form button {
+  background-color: var(--primary);
+  color: var(--dark);
+  font-weight: 700;
+  width: 100%;
+  height: 40px;
+  margin-top: 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.container .input-form button:hover,
+.container .input-form button:active {
+  background-color: var(--secondary);
+  border: 3px solid var(--primary);
+}
+
+.input-form input.invalid,
+.input-form textarea.invalid {
+  border: 2px solid red;
+}
+
+.container .note-lists-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-block: 2rem;
+}
+
+.container .note-lists-container .note-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: var(--secondary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.card h3 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: var(--dark);
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
+.card button {
+  width: 100%;
+  color: var(--dark);
+  border-radius: 20px;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border: none;
+  font-size: 1rem;
+}
+
+.card button:hover {
+  background-color: var(--secondary);
+  border: 3px solid var(--primary);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .container .input-form {
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+  }
+}
